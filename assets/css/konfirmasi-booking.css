@@ -1,0 +1,7 @@
+/* content */
+#content .container .col-10 .card .card-body form .col-6 input {
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 20px !important;
+}

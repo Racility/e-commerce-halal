@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+</head>
+
+<body>
+    <header class="fixed-top position-fixed w-100 pt-2 pb-2" style="background-color: #201E43;">
+        <nav class="navbar bg-transparent">
+            <div class="container p-0">
+                <a class="navbar-brand p-0 pt-1 pb-2 px-3 rounded-1" href="homepage.html"
+                    style="background-color: #20AFD3;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-house-door text-white" viewBox="0 0 16 16">
+                        <path
+                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                    </svg>
+                </a>
+                <form class="d-flex mx-auto" role="search">
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn text-black" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </button>
+                </form>
+                <ul class="navbar-nav flex-row gap-3 mr-auto d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="checkout.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-cart-dash" viewBox="0 0 16 16">
+                                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                                <path
+                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn text-white border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu position-absolute" style="right: 6px; left: auto; margin-top: 0px;">
+                            <li><a class="dropdown-item" href="profile.html">Setting</a></li>
+                            <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="content" id="content">
+        <div class="container">
+            <div class="hero-images " style="margin-top: 120px;">
+                <div class="row justify-content-between">
+                    <div class="col-8">
+                        <img src="assets/img/hero-img-yogurt.png" alt="" width="100%" height="400px">
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <img src="assets/img/hero-img-coffie.png" alt="" width="90%" height="400px">
+                    </div>
+                    <div class="col-4 d-flex justify-content-start  mt-5">
+                        <img src="assets/img/hero-img-parfum.png" alt="" width="90%" height="400px">
+                    </div>
+                    <div class="col-8 mt-5">
+                        <img src="assets/img/hero-img-molto.png" alt="" width="100%" height="400px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="list-products pt-5 pb-5" style="background-color: #201E43; margin-top: 80px;">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-2 d-flex justify-content-center align-items-center flex-column">
+                    <a href="belanja.html">
+                        <div class="card shadow pt-2 pb-2 px-4 " style="width: max-content;">
+                            <div class="card-body p-0" style="width: max-content;">
+                                <img src="assets/img/items-minum.png" alt=""
+                                    style="margin: 0 auto; width:40px; height:60px;">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="belanja.html" class="btn text-white p-0 mt-2">Minuman</a>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center flex-column">
+                    <a href="#">
+                        <div class="card shadow pt-2 pb-2 px-4 " style="width: max-content;">
+                            <div class="card-body p-0" style="width: max-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="60px" viewBox="0 0 16 16">
+                                    <path fill="orange" fill-rule="evenodd"
+                                        d="M6.75 1A5.75 5.75 0 0 0 1 6.75v.518a2 2 0 0 0 0 3.464v1.518A2.75 2.75 0 0 0 3.75 15h8.5A2.75 2.75 0 0 0 15 12.25v-1.518a2 2 0 0 0 0-3.464V6.75A5.75 5.75 0 0 0 9.25 1zM14 8.5H2a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1M13.5 7v-.25A4.25 4.25 0 0 0 9.25 2.5h-2.5A4.25 4.25 0 0 0 2.5 6.75V7zM11 11h2.5v1.25c0 .69-.56 1.25-1.25 1.25h-8.5c-.69 0-1.25-.56-1.25-1.25V11H9l1 1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="btn text-white p-0 mt-2">Makanan</a>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center flex-column">
+                    <a href="#">
+                        <div class="card shadow pt-2 pb-2 px-4 " style="width: max-content;">
+                            <div class="card-body p-0" style="width: max-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="60px" viewBox="0 0 48 48">
+                                    <g fill="none" stroke="#FF00C8" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="4">
+                                        <path d="M42 44V22c0-9.941-8.059-18-18-18S6 12.059 6 22v22" />
+                                        <path fill="#FF00C8"
+                                            d="M24 43c5.523 0 10-8.954 10-20H14c0 11.046 4.477 20 10 20" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="btn text-white p-0 mt-2">Kecantikan</a>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center flex-column">
+                    <a href="#">
+                        <div class="card shadow pt-2 pb-2 px-4 " style="width: max-content;">
+                            <div class="card-body p-0" style="width: max-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="60px" viewBox="0 0 24 24">
+                                    <path fill="#484848"
+                                        d="M8.1 13.34L3.91 9.16a4.01 4.01 0 0 1 0-5.66l7.02 7zm6.78-1.81L13.41 13l6.88 6.88l-1.41 1.41L12 14.41l-6.88 6.88l-1.41-1.41l9.76-9.76c-.71-1.53-.21-3.68 1.38-5.27c1.91-1.92 4.65-2.28 6.11-.82c1.47 1.47 1.11 4.21-.81 6.12c-1.59 1.59-3.74 2.09-5.27 1.38" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="btn text-white p-0 mt-2">Alat & bahan masak</a>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center flex-column">
+                    <a href="booking.html">
+                        <div class="card shadow pt-2 pb-2 px-4 " style="width: max-content;">
+                            <div class="card-body p-0" style="width: max-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="60px" viewBox="0 0 24 24">
+                                    <path fill="#0023AD"
+                                        d="M12 21q-1.864 0-3.506-.71q-1.642-.711-2.857-1.926q-1.216-1.216-1.926-2.858Q3 13.864 3 12t.71-3.506t1.927-2.857T8.494 3.71Q10.137 3 12 3q3.496 0 6.032 2.307t2.903 5.699h-1.012q-.263-2.171-1.568-3.897T15 4.562V5q0 .825-.587 1.413T13 7h-2v2q0 .425-.288.713T10 10H8v2h1.846v3H9l-4.8-4.8q-.075.45-.137.9T4 12q0 3.275 2.3 5.625T12 20zm9.023-.27l-3.45-3.41q-.448.319-.971.5q-.523.18-1.102.18q-1.471 0-2.485-1.014Q12 15.97 12 14.5t1.015-2.485T15.5 11t2.486 1.015T19 14.5q0 .598-.19 1.13q-.19.533-.53.981l3.45 3.412zM15.5 17q1.05 0 1.775-.725T18 14.5t-.725-1.775T15.5 12t-1.775.725T13 14.5t.725 1.775T15.5 17" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="booking.html" class="btn text-white p-0 mt-2">Booking
+                        Travel</a>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center flex-column">
+                    <div class="card shadow pt-2 pb-2 px-4 " style="width: max-content;">
+                        <a href="donasi.html">
+                            <div class="card-body p-0" style="width: max-content;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="60px" viewBox="0 0 48 48">
+                                    <path fill="#e69329" d="m11.7 21.6l5.1 9.9l9.5-3.9l4.4-12.7l-14.8.8z" />
+                                    <circle cx="15" cy="36" r="7.8" fill="#546e7a" />
+                                    <g fill="#90a4ae">
+                                        <path
+                                            d="M15 27c-5 0-9 4-9 9s4 9 9 9s9-4 9-9s-4-9-9-9m0 16c-3.9 0-7-3.1-7-7s3.1-7 7-7s7 3.1 7 7s-3.1 7-7 7" />
+                                        <path d="M14 33h2v8h-2z" />
+                                    </g>
+                                    <g fill="#ffb74d">
+                                        <path
+                                            d="M12.9 36c1 1.9 3.2 2.7 5.1 1.7l16.5-8.5c1-.5 1.7-1.2 2.2-1.9c1.7-3.2 5.6-10.7 8.2-17.2l-18.2 8.7l-4.8 7.2l-6.8 3.6c-2.6 1.3-3.4 4.2-2.2 6.4" />
+                                        <path
+                                            d="M30.2 3L13.7 9.3c-.7.2-1.5 1-2.2 1.7l-5.6 7.5c-1 1.5-1.2 3.4-.5 5.1c.4 1 1.7 3.4 3.1 6.1C10.1 28 12.4 27 15 27c.4 0 .9 0 1.3.1l-2.1-4.2l4.6-4.1h8s15.5-2.2 18.2-8.7z" />
+                                    </g>
+                                    <path fill="#ffcdd2"
+                                        d="M18.2 36c-1.3.6-2.8 0-3.3-1.3c-.6-1.3 0-2.8 1.3-3.3c1.2-.6 3.2 4 2 4.6" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="donasi.html" class="btn text-white p-0 mt-2">Donasi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="more-items mt-5 pt-5">
+        <div class="container">
+            <h3 class="mb-4">Minuman</h3>
+            <div class="row justify-content-between flex-wrap mb-5 pb-5">
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/items-product-kopi.png" alt="" width="72px">
+                            <p class="mt-3">Kopi Kapal Api</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/items-product-yogurt.png" alt="" width="90px">
+                            <p class="mt-3">Cimory Yogurt</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/items-product-oky.png" alt="" width="90px">
+                            <p class="mt-3">Okky Jelly</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/items-product-susu-ultra.png" alt="" width="90px">
+                            <p class="mt-3">Ultramilk</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/items-product-kacang.png" alt="" width="90px">
+                            <p class="mt-3">kacang Ijo</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="mb-4 mt-4">Makanan</h3>
+            <div class="row justify-content-between flex-wrap mb-5 pb-5">
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/aoka.png" alt="" width="88px">
+                            <p class="mt-3">Aoka</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/cocolatos.png" alt="" width="88px">
+                            <p class="mt-3">Cocolatos</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/bengbeng.png" alt="" width="88px">
+                            <p class="mt-3">Beng Beng</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/silverqueen.png" alt="" width="88px">
+                            <p class="mt-3">Silverqueen</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/lays.png" alt="" width="88px">
+                            <p class="mt-3">Lays</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="mb-4 mt-4">Kecantikan</h3>
+            <div class="row justify-content-between flex-wrap mb-5 pb-5">
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/hada.png" alt="" width="90px">
+                            <p class="mt-3">Hada</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/beeme.png" alt="" width="90px">
+                            <p class="mt-3">Beeme</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/you.png" alt="" width="90px">
+                            <p class="mt-3">Y o U</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/glad.png" alt="" width="90px">
+                            <p class="mt-3">Glad2Glow</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/wardah.png" alt="" width="90px">
+                            <p class="mt-3">Wardah</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="mb-4 mt-4">Alat Dan Bahan Masak</h3>
+            <div class="row justify-content-between flex-wrap mb-5 pb-5">
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/kompor.png" alt="" width="90px">
+                            <p class="mt-3">Kompor</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/garam.png" alt="" width="90px">
+                            <p class="mt-3">Garam</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/gula.png" alt="" width="90px">
+                            <p class="mt-3">Gula</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/wajan.png" alt="" width="90px">
+                            <p class="mt-3">Wajan</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/panci.png" alt="" width="90px">
+                            <p class="mt-3">Panci</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="mb-4 mt-4">Peralatan Belajar</h3>
+            <div class="row justify-content-between flex-wrap mb-5 pb-5">
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/pensil.png" alt="" width="90px">
+                            <p class="mt-3">Pensil</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/buku.png" alt="" width="90px">
+                            <p class="mt-3">Buku</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/penghapus.png" alt="" width="90px">
+                            <p class="mt-3">Penghapus</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/pengaris.png" alt="" width="90px">
+                            <p class="mt-3">Pengaris</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card shadow" style="width: max-content;">
+                        <div class="card-body d-flex align-items-center flex-column pb-0">
+                            <img src="assets/img/pulpen.png" alt="" width="90px">
+                            <p class="mt-3">pulpen</p>
+                        </div>
+                        <div class="card-footer border-0" style="background-color: #201E43;">
+                            <a href="detail-produk.html" class="btn text-white">Cek Barang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+/* content */
+#content .container .row .col-4 .card {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border: 1px solid #134B70 !important;
+}

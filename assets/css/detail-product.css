@@ -1,0 +1,72 @@
+/* content */
+#content .container .row .col-4 .card.shadow {
+    box-shadow: 0 0.5rem 1rem #201E43 !important;
+}
+
+#content .container .row .col-8 .desc-items {
+    background-color: #508C9B;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#content .container .row .col-8 .jumlah-range .spinner button,
+#content .container .row .col-8 .jumlah-range .spinner input,
+#content .container .row .col-8 .jumlah-range .spinner button {
+    background: transparent;
+    color: white;
+}
+
+#content .container .row .col-8 .jumlah-range .spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    background-color: #508C9B;
+    border-radius: 10px;
+}
+
+#content .container .row .col-8 .jumlah-range .arrow.left.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    /* Tidak dapat diklik */
+}
+
+#content .container .row .col-8 .jumlah-range .number-input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+
+}
+
+#content .container .row .col-8 .jumlah-range .number-input:focus {
+    border: none;
+    outline: none;
+}
+
+#content .container .row .col-8 .jumlah-range .arrow {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    line-height: 1;
+}
+
+#content .container .row .col-8 .jumlah-range input[type="number"]::-webkit-inner-spin-button,
+#content .container .row .col-8 .jumlah-range input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#content .container .row .col-8 .jumlah-range input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#content .container .row .col-8 .last-btn .btn {
+    background-color: #508C9B;
+    color: white;
+    padding: 6px 30px;
+}
